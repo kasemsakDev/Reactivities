@@ -1,7 +1,7 @@
 import { makeAutoObservable, reaction } from "mobx";
 import { ServerError } from "../models/serverError";
 
-export default class CommonStore {
+export default class   {
     error: ServerError | null = null;
     token: string | null = window.localStorage.getItem('jwt');
     appLoaded = false;
